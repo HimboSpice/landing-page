@@ -84,6 +84,11 @@ a,
   border: 0;
 }
 
+.mirrored-image {
+  display: inline-block; /* or any appropriate display value */
+  transform: scaleX(-1); /* Flip the image horizontally */
+}
+
 .image-placeholder {
   flex: 1;
   background-color: rgba(238,238,238, 0.5);
@@ -124,6 +129,8 @@ a,
   border: solid #3882f6 2px;
   border-radius: 7px;
   margin-bottom: 10px;
+  background-size: cover;
+  background-position: center;
 }
 
 .info-text {
@@ -159,15 +166,16 @@ a,
   justify-content: center;
   align-items: center;
   padding: 50px 100px;
+  
 }
 
 .label {
   display: flex;
   min-width: 600px;
-  
-  align-items: center;
-  justify-content: space-between;
-  background-color: #3882f6;
+  align-items: flex-start;
+  justify-content: flex-start;
+  background-image: url(/home/himbospice/odin-links-and-images/images/riley-reid-meme.jpg);
+  background-position: center center;
   border-radius: 7px;
   padding: 25px 75px;
 }
@@ -186,6 +194,7 @@ a,
 
 .label-right .button {
   border: solid 2px #e5e7eb;
+  margin-left: 70px;
 }
 
 .footer {
