@@ -28,6 +28,11 @@ body {
   font-weight: bold;
 }
 
+.logo img {
+  max-width: 80px; /* Adjust the value as needed */
+  height: auto;
+}
+
 ul {
   list-style: none;
   display: flex;
